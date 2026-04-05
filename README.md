@@ -45,9 +45,9 @@ healthcare-app/
 | Frontend | React 18 (Create React App)              |
 | Styling  | Pure CSS with CSS variables              |
 | Icons    | Lucide React                             |
-| AI / NLP | **Google Gemini API** (gemini-1.5-flash) |
+| AI / NLP | **Google Gemini API** (gemini-2.5-flash) |
 | Storage  | localStorage (browser-side)              |
-| Hosting  | Vercel / Netlify                         |
+| Hosting  | Vercel                                   |
 | Fonts    | DM Serif Display + DM Sans (Google)      |
 
 ---
@@ -55,7 +55,7 @@ healthcare-app/
 ## 🤖 AI Features (3 Implementations)
 
 ### 1. 🗣 AI Chatbot (`ChatbotPage.js`)
-- Full conversational chatbot powered by **Gemini 1.5 Flash**
+- Full conversational chatbot powered by **Gemini 2.5 Flash**
 - Multi-turn memory — remembers conversation context
 - Healthcare-specific system prompt covering appointments, services, emergencies, volunteering
 - Quick-reply chips for common questions
@@ -90,51 +90,9 @@ cp .env.example .env
 # 4. Run locally
 npm start
 # Opens at http://localhost:3000
+
+
 ```
-
----
-
-## 🔑 Getting Your FREE Gemini API Key
-
-**No credit card. No purchase. 100% free.**
-
-1. Go to 👉 https://aistudio.google.com/app/apikey
-2. Sign in with your **Google account**
-3. Click **"Create API Key"**
-4. Copy the key (starts with `AIza...`)
-5. Paste it in your `.env` file:
-   ```
-   REACT_APP_GEMINI_API_KEY=AIzaSy...your_key_here
-   ```
-6. Restart with `npm start`
-
-> ⚡ **No key needed to test the UI** — demo mode works automatically without any key.
-
----
-
-## 🌐 Deploy to Vercel (Free)
-
-```bash
-npm i -g vercel
-vercel
-```
-
-Then in Vercel Dashboard → Project → Settings → Environment Variables, add:
-```
-REACT_APP_GEMINI_API_KEY = AIzaSy...your_key_here
-```
-
-Redeploy and you're live!
-
-**Netlify alternative:**
-```bash
-npm run build
-# Drag the /build folder to netlify.com/drop
-# Add env var in: Site Settings → Environment Variables
-```
-
----
-
 ## 🏥 NGO Use Case
 
 - **Patient intake** — digitises registration, triages urgency
