@@ -6,8 +6,7 @@ A production-ready React web app built for healthcare NGOs, featuring patient/vo
 
 ## 🚀 Live Demo
 
-> **Hosted Link:** *(Add your Vercel/Netlify URL here after deployment)*  
-> **GitHub:** *(Add your repo URL here)*
+> **Hosted Link:** *https://healthcare-app-mauve.vercel.app/*  
 
 ---
 
